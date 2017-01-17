@@ -4,7 +4,6 @@ var gulp = require('gulp');
 var electron = require('electron-connect').server.create();
 var ts = require('gulp-typescript');
 
-
 gulp.task('default', function () {
 
   // Start browser process
