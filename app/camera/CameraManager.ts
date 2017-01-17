@@ -9,7 +9,7 @@ export class CameraManager {
 
     startCamera(): void {
         if (navigator.getUserMedia) {
-            navigator.getUserMedia({ audio: true, video: true }, (stream: MediaStream) => {
+            navigator.getUserMedia({ video: true }, (stream: MediaStream) => {
                 this.videoDomElement.src = window.URL.createObjectURL(stream);
                 this._isOn = true;
                 this.stream = stream;
