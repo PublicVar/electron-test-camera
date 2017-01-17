@@ -1,0 +1,23 @@
+video{
+    width: 600px;
+    height: 517px;
+}
+
+canvas{
+    display: none;
+    width: 150px;
+    height: 130px;
+}
+
+.preview{
+    position: absolute;
+    top : 20px;
+    left: 20px;
+    width: 150px;
+    height: 130px;
+    background-color: #fff;
+    border: 1px solid blue;
+}
+.main{
+    position: relative;
+}
