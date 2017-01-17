@@ -1,0 +1,39 @@
+{
+  "name": "electron",
+  "version": "1.0.0",
+  "description": "A minimal Electron application",
+  "main": "main.js",
+  "scripts": {
+    "start": "tsc && concurrently \"tsc -w\" \"gulp\"",
+    "build": "electron-packager . --out=dist --asar --overwrite --all",
+    "start-angular": "tsc && concurrently \"tsc -w\" \"lite-server\" "
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "Electron",
+    "Starter"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "dependencies": {
+    "electron-debug": "^1.0.0",
+    "nedb": "^1.8.0"
+  },
+  "devDependencies": {
+    "@types/nedb": "0.0.31",
+    "@types/node": "^6.0.46",
+    "canonical-path": "0.0.2",
+    "concurrently": "^3.1.0",
+    "devtron": "^1.1.0",
+    "electron": "^1.0.1",
+    "electron-connect": "^0.6.1",
+    "electron-packager": "^8.0.0",
+    "gulp": "^3.9.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-typescript": "^3.1.4",
+    "http-server": "^0.9.0",
+    "lite-server": "^2.2.2",
+    "lodash": "^4.16.4",
+    "typescript": "^2.0.10"
+  }
+}
